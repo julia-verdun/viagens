@@ -13,7 +13,7 @@ Adicionar destinos ao carrinho de reservas e finalizar a compra
 Entrar em contato com a agência por meio do formulário (seção Contato)
 
 JUSTIFICATIVA DO PROJETO (PESSOAL)
-Sempre tivemos paixão por viajar e descobrir novos lugares. Aproveitamos esse interesse comum para criar um site baseado em experiências reais de viagem, trazendo destinos incríveis para inspirar outras pessoas. Queremos oferecer um espaço que seja ao mesmo tempo bonito, funcional e acolhedor para quem ama explorar o mundo.
+nós dois gostamos muito de viagens e então criamos um site onde as pessoas pudessem marcar seus voose estar atualizados com as noticias delas tambem com objetivo de trazer seguraça e conforto para os passageiros e levar os sohos de viagens paracada um.
 
 JUSTIFICATIVA DO PROJETO (TÉCNICA)
 O turismo é um setor que cresce continuamente e a busca por plataformas simples para visualizar e reservar destinos é cada vez maior.
