@@ -1,4 +1,5 @@
  NOSSAS VIAGENS
+ 
 ESCOPO DO PROJETO
 Este projeto consiste no desenvolvimento de uma aplicação web que apresenta destinos turísticos e possibilita ao usuário reservar suas viagens de forma prática e intuitiva.
 O sistema permitirá que os usuários possam:
