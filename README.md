@@ -13,8 +13,8 @@ Adicionar destinos ao carrinho de reservas e finalizar a compra
 Entrar em contato com a agência por meio do formulário (seção Contato)
 
 JUSTIFICATIVA DO PROJETO (PESSOAL)
-nós dois gostamos muito de viagens e então criamos um site onde as pessoas pudessem marcar seus voose estar atualizados com as noticias delas tambem com objetivo de trazer seguraça e conforto para os passageiros e levar os sohos de viagens paracada um.
-
+nós dois gostamos muito de viagens e então criamos um site onde as pessoas pudessem marcar seus voos e temos como objetivo de trazer seguraça e conforto para os passageiros e levar os sohos de viagens paracada um.
+delas ta
 JUSTIFICATIVA DO PROJETO (TÉCNICA)
 O turismo é um setor que cresce continuamente e a busca por plataformas simples para visualizar e reservar destinos é cada vez maior.
 Este site “Nossas Viagens” serve como prática para consolidar conhecimentos em:
