@@ -1,4 +1,6 @@
 PONTOS CRÍTICOS
+
+
 1.Responsividade Limitada: Seu CSS usa medidas fixas em vários elementos (larguras e alturas em px). Isso faz com que o layout quebre em telas menores.
 👉 O ideal é usar unidades relativas como %, em ou rem, além de media queries.
 
