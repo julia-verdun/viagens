@@ -1,0 +1,1097 @@
+{
+  "id": "97852a1b-f41c-4ae5-9dd8-fdf3f6cd8d47",
+  "version": "2.0",
+  "name": "viagens",
+  "url": "http://127.0.0.1:5500/index.html",
+  "tests": [{
+    "id": "ec001e10-c59f-433d-88de-13fa1f3474e5",
+    "name": "TC01",
+    "commands": [{
+      "id": "3dabeb3e-39fc-43f0-8180-bfee98526f90",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "748855b9-bb67-41b7-aefb-3d431975dca1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "914c0f3b-2ae2-4754-a639-25cf93eaf31a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.md\\3A flex > .text-blue-600", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b778ea84-2475-4efb-80f0-9658fc8cf36f",
+    "name": "TC02",
+    "commands": [{
+      "id": "23719ab5-ea0a-4b19-acdd-ec9f1acc0c07",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45a76d00-abd3-4673-aec2-c53526519d58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ac522cf-cf00-4566-80a7-3e51d3416ead",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reservas",
+      "targets": [
+        ["linkText=Reservas", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reservas.html')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9d56f2ec-6d9a-421e-a8b9-ededafff4357",
+    "name": "TC03",
+    "commands": [{
+      "id": "e721ab95-ec6a-45fa-9afe-fa55c40ddbcc",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd02509d-d82f-4be1-9609-a510e38ebc24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e60f80b-a754-4ae8-acfb-7bdacaed723a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contato",
+      "targets": [
+        ["linkText=Contato", "linkText"],
+        ["css=.md\\3A flex > .text-gray-600:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Contato')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'contato.html')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f326e9fc-e51e-4fe4-b04b-f837bf32eaaa",
+    "name": "TC04",
+    "commands": [{
+      "id": "46afe859-24b3-4e48-a37d-c82eef22dc8b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b6ee45c-ac7d-4824-8e91-b8afe7184177",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a5b3b82-900a-41ed-bd07-6bca14b0380a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "176ead8d-5300-45cd-bbae-b935608592b6",
+    "name": "TC05",
+    "commands": [{
+      "id": "ddd18a9b-62e4-45e4-a07d-9e61788e4122",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6361720-f5de-47fa-a166-088511734742",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a3483f2-e729-4f27-abd8-9fbac8af3b63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contato",
+      "targets": [
+        ["linkText=Contato", "linkText"],
+        ["css=.md\\3A flex > .text-gray-600:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Contato')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'contato.html')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee9b91e-05fa-4470-ab93-aac8f82d2947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4:nth-child(1) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(1) > .w-full", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//form[@id='formContato']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "635a05d3-2738-411a-8867-e70999b58d58",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4:nth-child(1) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(1) > .w-full", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//form[@id='formContato']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jordan"
+    }, {
+      "id": "af786c1e-c616-4dfe-a58f-d39758e5f8ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=formContato",
+      "targets": [
+        ["id=formContato", "id"],
+        ["css=#formContato", "css:finder"],
+        ["xpath=//form[@id='formContato']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f1b8a09-8f37-4fb5-8074-3a886eeae218",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4:nth-child(2) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(2) > .w-full", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formContato']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0837aa3-d6f2-4a7c-9352-472f56aaa11d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4:nth-child(2) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(2) > .w-full", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formContato']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "jordan.paim@aluno.senai.br"
+    }, {
+      "id": "1c1b1b28-800a-4e2d-9050-77a9fd3fa513",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4:nth-child(3) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(3) > .w-full", "css:finder"],
+        ["xpath=//form[@id='formContato']/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc3b6e7-2569-4835-8024-9713fa49421b",
+      "comment": "",
+      "command": "select",
+      "target": "css=.mb-4:nth-child(3) > .w-full",
+      "targets": [],
+      "value": "label=Problema com reserva"
+    }, {
+      "id": "39500c94-98ca-4a93-96fd-9b871a9853e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(4)",
+      "targets": [
+        ["css=option:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='formContato']/div[3]/select/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Problema com reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82c0ba1c-d302-4cb6-ae80-48b75ce7319e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4:nth-child(4) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(4) > .w-full", "css:finder"],
+        ["xpath=//form[@id='formContato']/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35aca36a-cdbf-4106-9dc4-36fe27fce636",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-4:nth-child(4) > .w-full",
+      "targets": [
+        ["css=.mb-4:nth-child(4) > .w-full", "css:finder"],
+        ["xpath=//form[@id='formContato']/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "todo errado"
+    }, {
+      "id": "eaad0f87-49dd-4423-8a42-ad75288fce7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formContato']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar mensagem')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bea4a4d0-4035-420c-b282-3d92aaa733fa",
+    "name": "TC06",
+    "commands": [{
+      "id": "e701e479-c382-4b5f-863f-4af25dfddc5b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c97309f9-12d4-4da1-ab18-549b3f2bbf82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61ab6865-2f3e-4b27-bc7f-12815745f6b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=origin",
+      "targets": [
+        ["id=origin", "id"],
+        ["css=#origin", "css:finder"],
+        ["xpath=//input[@id='origin']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7943848-fb18-447b-995d-bee728a21ff9",
+      "comment": "",
+      "command": "type",
+      "target": "id=origin",
+      "targets": [
+        ["id=origin", "id"],
+        ["css=#origin", "css:finder"],
+        ["xpath=//input[@id='origin']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "são paulo"
+    }, {
+      "id": "183888e5-0b2e-4323-a4d3-1e89ffbe9733",
+      "comment": "",
+      "command": "click",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//input[@id='destination']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b7c1d00-d6d0-424d-bcab-8cd1a2dd4819",
+      "comment": "",
+      "command": "type",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//input[@id='destination']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "rio de janeiro"
+    }, {
+      "id": "b878fa25-3a64-48cb-acb5-130308dc329b",
+      "comment": "",
+      "command": "click",
+      "target": "id=departure",
+      "targets": [
+        ["id=departure", "id"],
+        ["css=#departure", "css:finder"],
+        ["xpath=//input[@id='departure']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a60711e-e0ff-472e-ab5e-b721cd9f4a93",
+      "comment": "",
+      "command": "type",
+      "target": "id=departure",
+      "targets": [
+        ["id=departure", "id"],
+        ["css=#departure", "css:finder"],
+        ["xpath=//input[@id='departure']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2025-09-29"
+    }, {
+      "id": "030c6f9b-8f3e-4c61-a6c9-d83a6b6378a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=return",
+      "targets": [
+        ["id=return", "id"],
+        ["css=#return", "css:finder"],
+        ["xpath=//input[@id='return']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f1cf7e6-ba25-413e-a482-2c39aa7b020f",
+      "comment": "",
+      "command": "click",
+      "target": "id=return",
+      "targets": [
+        ["id=return", "id"],
+        ["css=#return", "css:finder"],
+        ["xpath=//input[@id='return']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13ec5b9a-04da-4db8-9326-155aad8b0719",
+      "comment": "",
+      "command": "click",
+      "target": "id=return",
+      "targets": [
+        ["id=return", "id"],
+        ["css=#return", "css:finder"],
+        ["xpath=//input[@id='return']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a11fb08b-2e04-4399-ae1b-67d4b3ce012f",
+      "comment": "",
+      "command": "type",
+      "target": "id=return",
+      "targets": [
+        ["id=return", "id"],
+        ["css=#return", "css:finder"],
+        ["xpath=//input[@id='return']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2025-11-26"
+    }, {
+      "id": "00990c11-557c-4451-883e-f7d136ca7e48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "489f9083-a01e-4c87-9f2d-b158c2f41457",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b04483-0fcd-46ef-a2cb-5dfc5b68be66",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab41c8ad-883e-4083-b276-7b20bbd116dc",
+    "name": "TC07",
+    "commands": [{
+      "id": "731f1a33-0c86-4e64-8bed-f912898ef5de",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e0c5c59-e199-416d-aa18-4450ff5cce7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "603a502f-4ec7-495c-a84b-2ac4d94f38af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a1552e2-68ae-493c-869a-dfda4fa44c69",
+      "comment": "",
+      "command": "click",
+      "target": "id=departure",
+      "targets": [
+        ["id=departure", "id"],
+        ["css=#departure", "css:finder"],
+        ["xpath=//input[@id='departure']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d046d90d-56be-43dc-9223-dd185a4a03cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=departure",
+      "targets": [
+        ["id=departure", "id"],
+        ["css=#departure", "css:finder"],
+        ["xpath=//input[@id='departure']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2025-09-07"
+    }, {
+      "id": "115dd64f-45ed-4e05-82ad-69265c7bf580",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-600",
+      "targets": [
+        ["css=.bg-blue-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='flight-search-form']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar voos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "44776f11-204b-4429-9357-6bc11ecb9c8f",
+    "name": "TC08",
+    "commands": [{
+      "id": "cfccf762-31fc-445a-a8d9-dd4eef37206e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57499831-0774-4acc-91d0-c5c5723f5c14",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b39256e-9575-427a-b6ed-26b63309e99e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hotel",
+      "targets": [
+        ["linkText=Hotel", "linkText"],
+        ["css=.text-gray-600:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Hotel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'hotel.html')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Hotel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e1f853f-b6eb-4f5c-bd62-7f0e6e012a1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hotel-card:nth-child(3) .book-button",
+      "targets": [
+        ["css=.hotel-card:nth-child(3) .book-button", "css:finder"],
+        ["xpath=(//a[contains(text(),'Reservar')])[3]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reservas.html?destino=Salvador%2C%20Brasil')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50b28b74-64b9-4b1c-a254-18395a5a5f67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-reservar",
+      "targets": [
+        ["css=.btn-reservar", "css:finder"],
+        ["xpath=//div[@id='carrinho-container']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reservar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb7ca2f-a263-4a42-9ea5-485f25230ae3",
+      "comment": "",
+      "command": "click",
+      "target": "id=metodo",
+      "targets": [
+        ["id=metodo", "id"],
+        ["css=#metodo", "css:finder"],
+        ["xpath=//select[@id='metodo']", "xpath:attributes"],
+        ["xpath=//div[@id='pagamento-card']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1d814c4-81ce-4b72-84e1-cd6a31b0b8fa",
+      "comment": "",
+      "command": "select",
+      "target": "id=metodo",
+      "targets": [],
+      "value": "label=PIX"
+    }, {
+      "id": "0275f885-8729-4418-8820-d20e57cd1f8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='pix']", "xpath:attributes"],
+        ["xpath=//select[@id='metodo']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'PIX')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3545b490-acd0-413a-b53d-175e5c128e0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-finalizar",
+      "targets": [
+        ["id=btn-finalizar", "id"],
+        ["css=#btn-finalizar", "css:finder"],
+        ["xpath=//button[@id='btn-finalizar']", "xpath:attributes"],
+        ["xpath=//div[@id='pagamento-card']/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Finalizar Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "04ce4292-df20-47e7-9d16-9f2447103cc9",
+    "name": "TC09",
+    "commands": [{
+      "id": "8d8fc87e-1b27-4035-8eb6-619b5dfe2100",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9703ec78-4454-41c7-9aa6-70ffd5e22d43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fff81e99-83bb-4a5c-84fb-e4ee5091dea0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.destination-card:nth-child(1) > .p-6",
+      "targets": [
+        ["css=.destination-card:nth-child(1) > .p-6", "css:finder"],
+        ["xpath=//section[@id='destinations']/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c9bd26-68a9-451d-b694-4adc69dd1bc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.destination-card:nth-child(2) .w-full",
+      "targets": [
+        ["css=.destination-card:nth-child(2) .w-full", "css:finder"],
+        ["xpath=//img[@alt='Nova York']", "xpath:img"],
+        ["xpath=//section[@id='destinations']/div/div[2]/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6895fc-ef0c-4575-b074-afee0a96fa8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.destination-card:nth-child(3) .w-full",
+      "targets": [
+        ["css=.destination-card:nth-child(3) .w-full", "css:finder"],
+        ["xpath=//img[@alt='Tóquio']", "xpath:img"],
+        ["xpath=//section[@id='destinations']/div/div[2]/div[3]/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6915494-db6d-489a-afaf-495a64fac04e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.destination-card:nth-child(4) .text-xl",
+      "targets": [
+        ["css=.destination-card:nth-child(4) .text-xl", "css:finder"],
+        ["xpath=//section[@id='destinations']/div/div[2]/div[4]/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Rio de Janeiro, Brasil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "433e1581-ef94-4a90-81ec-2e8363a3cd93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(1) > .relative > .w-full",
+      "targets": [
+        ["css=.bg-white:nth-child(1) > .relative > .w-full", "css:finder"],
+        ["xpath=//img[@alt='Oferta Roma']", "xpath:img"],
+        ["xpath=//section[@id='offers']/div/div[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dac5e6a-4304-402d-96ad-9374ca5814ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shadow-lg:nth-child(2) > .p-6",
+      "targets": [
+        ["css=.shadow-lg:nth-child(2) > .p-6", "css:finder"],
+        ["xpath=//section[@id='offers']/div/div[2]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82eac3ab-6419-41b6-942e-bfa12e0fcfdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shadow-lg:nth-child(3) > .p-6 > .text-xl",
+      "targets": [
+        ["css=.shadow-lg:nth-child(3) > .p-6 > .text-xl", "css:finder"],
+        ["xpath=//section[@id='offers']/div/div[2]/div[3]/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div[3]/div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Cancún, México')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b639a041-f8b8-4970-ad1c-fb1bcf4da5d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-4:nth-child(1)",
+      "targets": [
+        ["css=.px-4:nth-child(1)", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52da50e3-c11c-4a6c-acee-309e945d1b3f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ofertas",
+      "targets": [
+        ["linkText=Ofertas", "linkText"],
+        ["css=.md\\3A flex > .text-gray-600:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Ofertas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'ofertas.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Ofertas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23dbdd59-f5ac-4a2b-a571-a9fc1b38b89f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(4) h3",
+      "targets": [
+        ["css=.card:nth-child(4) h3", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[4]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Seul, Coreia do Sul')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bcaaa37-f99d-4421-941b-8db310c96b23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(5) > .card-content",
+      "targets": [
+        ["css=.card:nth-child(5) > .card-content", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ea3a9ba-4bac-4375-960d-18ffdee1cdca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(6) p",
+      "targets": [
+        ["css=.card:nth-child(6) p", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[6]/div/p", "xpath:idRelative"],
+        ["xpath=//div[6]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Destino gastronômico de renome mundial com história rica.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "777285bc-8ef5-49c2-9049-78148e15cb8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(7) h3",
+      "targets": [
+        ["css=.card:nth-child(7) h3", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[7]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[7]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Cartagena, Colômbia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8e4cb40-e41b-4cb3-aa52-1c00361cf78b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(8) > .card-content",
+      "targets": [
+        ["css=.card:nth-child(8) > .card-content", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[8]/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b5397e-c9ff-4784-a4b6-ce0558be9685",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(9) h3",
+      "targets": [
+        ["css=.card:nth-child(9) h3", "css:finder"],
+        ["xpath=//div[@id='cards-container']/div[9]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[9]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Helsinque, Finlândia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "031b60d3-6e37-4ed2-930e-28e2f281686c",
+    "name": "TC10",
+    "commands": [{
+      "id": "2acfa46b-96b8-42cf-8148-30e6a4727f13",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56b02f9e-e41e-4cf6-80ca-b53f93d92944",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1107x712",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4853b92e-8c7c-4b5e-b05a-b7449d6470f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destinos",
+      "targets": [
+        ["linkText=Destinos", "linkText"],
+        ["css=.md\\3A flex > .text-gray-600:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Destinos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'destino.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Destinos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d35f1be-79f4-4e07-9389-d50d48534715",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .btn-reservar",
+      "targets": [
+        ["css=.card:nth-child(2) .btn-reservar", "css:finder"],
+        ["xpath=(//a[contains(text(),'Reservar')])[2]", "xpath:link"],
+        ["xpath=//div[@id='cards-container']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'reservas.html?destino=Paris%2C%20Fran%C3%A7a')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f82c2eb0-ddb0-4627-b94a-ca2c457845f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-reservar",
+      "targets": [
+        ["css=.btn-reservar", "css:finder"],
+        ["xpath=//div[@id='carrinho-container']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reservar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "781b824e-7e70-489a-ab63-4ac660299c68",
+      "comment": "",
+      "command": "click",
+      "target": "id=metodo",
+      "targets": [
+        ["id=metodo", "id"],
+        ["css=#metodo", "css:finder"],
+        ["xpath=//select[@id='metodo']", "xpath:attributes"],
+        ["xpath=//div[@id='pagamento-card']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20938c2d-4969-43a3-a441-49f82f18e8cc",
+      "comment": "",
+      "command": "select",
+      "target": "id=metodo",
+      "targets": [],
+      "value": "label=Cartão de Crédito"
+    }, {
+      "id": "4a764728-1313-4927-9164-1650e014e861",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='cartao']", "xpath:attributes"],
+        ["xpath=//select[@id='metodo']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Cartão de Crédito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0423d9cd-ee0f-4dc7-ac80-bb8ea7446ab6",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero-cartao",
+      "targets": [
+        ["id=numero-cartao", "id"],
+        ["css=#numero-cartao", "css:finder"],
+        ["xpath=//input[@id='numero-cartao']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bccceca-d122-4cd3-922c-50a4116e1f03",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero-cartao",
+      "targets": [
+        ["id=numero-cartao", "id"],
+        ["css=#numero-cartao", "css:finder"],
+        ["xpath=//input[@id='numero-cartao']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5996547e-cdf0-4c86-b829-3202311cdc25",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero-cartao",
+      "targets": [
+        ["id=numero-cartao", "id"],
+        ["css=#numero-cartao", "css:finder"],
+        ["xpath=//input[@id='numero-cartao']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6029492557180240"
+    }, {
+      "id": "791f3a8a-950c-4138-b9f6-24c32cf80252",
+      "comment": "",
+      "command": "click",
+      "target": "id=validade",
+      "targets": [
+        ["id=validade", "id"],
+        ["css=#validade", "css:finder"],
+        ["xpath=//input[@id='validade']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f470a29-7c24-4b10-bfac-7521cfff0cae",
+      "comment": "",
+      "command": "type",
+      "target": "id=validade",
+      "targets": [
+        ["id=validade", "id"],
+        ["css=#validade", "css:finder"],
+        ["xpath=//input[@id='validade']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0435"
+    }, {
+      "id": "c1071a92-14ab-4739-a1d7-583a60ab0a64",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvv",
+      "targets": [
+        ["id=cvv", "id"],
+        ["css=#cvv", "css:finder"],
+        ["xpath=//input[@id='cvv']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a377e7d8-5a59-4fde-943f-09fa135808dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvv",
+      "targets": [
+        ["id=cvv", "id"],
+        ["css=#cvv", "css:finder"],
+        ["xpath=//input[@id='cvv']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "370"
+    }, {
+      "id": "6fc18361-d65c-4cd0-b70e-db0fe7947448",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-finalizar",
+      "targets": [
+        ["id=btn-finalizar", "id"],
+        ["css=#btn-finalizar", "css:finder"],
+        ["xpath=//button[@id='btn-finalizar']", "xpath:attributes"],
+        ["xpath=//div[@id='pagamento-card']/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Finalizar Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "220c0e36-d029-4643-be17-4bcc4d3c466e",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Validade inválida! Use MM/AA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a45478bc-ecd0-4210-a26d-9127640ad42a",
+      "comment": "",
+      "command": "click",
+      "target": "id=validade",
+      "targets": [
+        ["id=validade", "id"],
+        ["css=#validade", "css:finder"],
+        ["xpath=//input[@id='validade']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd0bef71-97e0-4538-aa05-653eb0b4769d",
+      "comment": "",
+      "command": "type",
+      "target": "id=validade",
+      "targets": [
+        ["id=validade", "id"],
+        ["css=#validade", "css:finder"],
+        ["xpath=//input[@id='validade']", "xpath:attributes"],
+        ["xpath=//div[@id='cartao-info']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "04/35"
+    }, {
+      "id": "7c1ca461-10d3-4ea0-9062-e438bfe40c48",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-finalizar",
+      "targets": [
+        ["id=btn-finalizar", "id"],
+        ["css=#btn-finalizar", "css:finder"],
+        ["xpath=//button[@id='btn-finalizar']", "xpath:attributes"],
+        ["xpath=//div[@id='pagamento-card']/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Finalizar Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b4084dfd-dd8f-45e0-91bc-41d9390cd9da",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec001e10-c59f-433d-88de-13fa1f3474e5"]
+  }],
+  "urls": [],
+  "plugins": []
+}
