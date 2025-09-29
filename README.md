@@ -1,61 +1,31 @@
- NOSSAS VIAGENS
- 
-ESCOPO DO PROJETO
-Este projeto consiste no desenvolvimento de uma aplicação web que apresenta destinos turísticos e possibilita ao usuário reservar suas viagens de forma prática e intuitiva.
-O sistema permitirá que os usuários possam:
+PONTOS CRÍTICOS
+Responsividade Limitada: Seu CSS usa medidas fixas em vários elementos (larguras e alturas em px). Isso faz com que o layout quebre em telas menores.
+👉 O ideal é usar unidades relativas como %, em ou rem, além de media queries.
 
-Visualizar uma lista de destinos disponíveis, organizados em cards interativos
+Imagens Sem Otimização: As imagens são pesadas e em formatos tradicionais (.jpg, .png). Isso prejudica o carregamento em conexões lentas.
+👉 Converter para .webp e reduzir o tamanho mantendo qualidade.
 
-Consultar informações e descrições resumidas de cada destino
+Falta de Textos Alternativos (alt): As imagens do site não possuem atributo alt, o que prejudica acessibilidade e SEO.
+👉 Adicionar descrições relevantes em todas as imagens.
 
-Adicionar destinos ao carrinho de reservas e finalizar a compra
+Links e Navegação Inconsistentes: Nem todas as páginas têm cabeçalho/menu igual, e alguns links podem quebrar dependendo do caminho do servidor.
+👉 Padronizar a barra de navegação e revisar os links relativos/absolutos.
 
-Entrar em contato com a agência por meio do formulário (seção Contato)
+Formulário de Contato Sem Validação: O contato.html não valida campos como e-mail ou telefone. Isso permite envio de dados inválidos.
+👉 Implementar validação com JavaScript e mensagens de erro claras.
 
-JUSTIFICATIVA DO PROJETO (PESSOAL)
-nós dois gostamos muito de viagens e então criamos um site onde as pessoas pudessem marcar seus voos e temos como objetivo de trazer seguraça e conforto para os passageiros e levar os sohos de viagens paracada um.
-delas ta
-JUSTIFICATIVA DO PROJETO (TÉCNICA)
-O turismo é um setor que cresce continuamente e a busca por plataformas simples para visualizar e reservar destinos é cada vez maior.
-Este site “Nossas Viagens” serve como prática para consolidar conhecimentos em:
+Busca de Voos/Hotéis Simples Demais: O campo de busca apenas redireciona sem validar os dados digitados.
+👉 Melhorar lógica de busca, exibir mensagens quando não houver resultados e permitir filtros.
 
-Desenvolvimento Front-end com HTML, CSS e JavaScript puro
+SEO Deficiente: Faltam metatags (description, keywords) e títulos otimizados nas páginas.
+👉 Incluir tags no <head> de cada página para melhor indexação nos buscadores.
 
-Uso de localStorage para simular um carrinho de reservas
+Pouca Interatividade nos Cards: Os cards de ofertas e destinos são estáticos e não chamam atenção do usuário.
+👉 Adicionar efeitos de hover, animações suaves e botões de ação.
 
-Criação de interfaces responsivas e centradas no usuário
+Acessibilidade por Teclado Ausente: O site não mostra foco visível ao navegar com Tab. Usuários sem mouse terão dificuldade.
+👉 Adicionar estilos :focus no CSS para botões e links.
 
-Estruturação de páginas independentes para Destinos, Reservas, Contato e Sobre Nós
+Ausência de Feedback em Ações: Ao selecionar voo ou enviar formulário, não há mensagem clara de confirmação ou erro.
+👉 Implementar mensagens de “enviado com sucesso” ou “ocorreu um erro”, além de estados de carregamento.
 
-Além disso, o projeto nos permitiu aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma de viagens.
-
-TÉCNOLOGIAS ENVOLVIDAS
-Front-end: HTML5, CSS3 e JavaScript
-
-Armazenamento local: LocalStorage do navegador para gerenciar reservas
-
-Controle de versão: Git + GitHub
-
-Design responsivo e acessibilidade para todos os dispositivos
-
-PROTÓTIPO INICIAL (WIREFRAME)
-Protótipo inicial criado para planejar as telas principais do sistema:
-
-Página inicial com listagem de destinos em cards
-
-Página de reservas com carrinho e opções de pagamento
-
-Formulário de contato com confirmação de envio
-
-Página “Sobre Nós” apresentando a agência
-
-📎 Link do Protótipo no Figma (inserir link aqui)
-
-ETAPA ATUAL
-Estrutura HTML e CSS criada para todas as páginas
-
-Funcionalidade de adicionar destinos ao carrinho de reservas
-
-Integração com método de pagamento simulado (PIX e Cartão)
-
-Seção de contato funcional com mensagem de confirmação
