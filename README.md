@@ -1,61 +1,12 @@
- NOSSAS VIAGENS
- 
-ESCOPO DO PROJETO
-Este projeto consiste no desenvolvimento de uma aplicação web que apresenta destinos turísticos e possibilita ao usuário reservar suas viagens de forma prática e intuitiva.
-O sistema permitirá que os usuários possam:
-
-Visualizar uma lista de destinos disponíveis, organizados em cards interativos
-
-Consultar informações e descrições resumidas de cada destino
-
-Adicionar destinos ao carrinho de reservas e finalizar a compra
-
-Entrar em contato com a agência por meio do formulário (seção Contato)
-
-JUSTIFICATIVA DO PROJETO (PESSOAL)
-nós dois gostamos muito de viagens e então criamos um site onde as pessoas pudessem marcar seus voos e temos como objetivo de trazer seguraça e conforto para os passageiros e levar os sohos de viagens paracada um.
-delas ta
-JUSTIFICATIVA DO PROJETO (TÉCNICA)
-O turismo é um setor que cresce continuamente e a busca por plataformas simples para visualizar e reservar destinos é cada vez maior.
-Este site “Nossas Viagens” serve como prática para consolidar conhecimentos em:
-
-Desenvolvimento Front-end com HTML, CSS e JavaScript puro
-
-Uso de localStorage para simular um carrinho de reservas
-
-Criação de interfaces responsivas e centradas no usuário
-
-Estruturação de páginas independentes para Destinos, Reservas, Contato e Sobre Nós
-
-Além disso, o projeto nos permitiu aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma de viagens.
-
-TÉCNOLOGIAS ENVOLVIDAS
-Front-end: HTML5, CSS3 e JavaScript
-
-Armazenamento local: LocalStorage do navegador para gerenciar reservas
-
-Controle de versão: Git + GitHub
-
-Design responsivo e acessibilidade para todos os dispositivos
-
-PROTÓTIPO INICIAL (WIREFRAME)
-Protótipo inicial criado para planejar as telas principais do sistema:
-
-Página inicial com listagem de destinos em cards
-
-Página de reservas com carrinho e opções de pagamento
-
-Formulário de contato com confirmação de envio
-
-Página “Sobre Nós” apresentando a agência
-
-📎 Link do Protótipo no Figma (inserir link aqui)
-
-ETAPA ATUAL
-Estrutura HTML e CSS criada para todas as páginas
-
-Funcionalidade de adicionar destinos ao carrinho de reservas
-
-Integração com método de pagamento simulado (PIX e Cartão)
-
-Seção de contato funcional com mensagem de confirmação
+| **ID** | **Funcionalidade**    | **Descrição do Teste**                         | **Entrada Esperada**                                      | **Resultado Esperado**                                                      |
+| ------ | --------------------- | ---------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------- |
+| TC01   | Navegação Home        | Clicar no menu "Home"                          | Clique no botão "Home"                                    | Redireciona para `index.html`                                               |
+| TC02   | Navegação Reservas    | Clicar no menu "Reservas"                      | Clique no botão "Reservas"                                | Redireciona para `reservas.html`                                            |
+| TC03   | Navegação Contato     | Clicar no menu "Contato"                       | Clique no botão "Contato"                                 | Redireciona para `contato.html`                                             |
+| TC04   | Formulário de Contato | Tentar enviar formulário vazio                 | Campos vazios                                             | Exibir alerta solicitando preenchimento dos campos obrigatórios             |
+| TC05   | Formulário de Contato | Enviar formulário com e-mail inválido          | E-mail: `abc@`                                            | Exibir mensagem de erro sobre e-mail inválido                               |
+| TC06   | Busca de Voos         | Digitar origem e destino válidos               | Origem: “São Paulo” – Destino: “Rio de Janeiro”           | Redireciona para resultados da busca em `reservas.html`                     |
+| TC07   | Busca de Voos         | Deixar campos de busca em branco               | Origem: vazio – Destino: vazio                            | Exibir mensagem solicitando preenchimento ou não prosseguir                 |
+| TC08   | Responsividade        | Abrir site em celular ou tablet                | Redimensionar janela ou usar modo responsivo do navegador | Layout se ajusta sem cortes, menu acessível, imagens ajustadas              |
+| TC09   | Hover nos Cards       | Passar o mouse sobre cards de ofertas/destinos | Hover no card                                             | Card aumenta/destaca visualmente (ex: sombra, animação)                     |
+| TC10   | Feedback de Reserva   | Selecionar um voo e prosseguir para reserva    | Clique em “Reservar”                                      | Redireciona para página de reservas + exibe mensagem de confirmação da ação |
