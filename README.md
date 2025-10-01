@@ -8,6 +8,8 @@ Visualizar uma lista de destinos disponíveis, organizados em cards interativos
 
 Consultar informações e descrições resumidas de cada destino
 
+Ter opções para reservar
+
 Adicionar destinos ao carrinho de reservas e finalizar a compra
 
 Entrar em contato com a agência por meio do formulário (seção Contato)
