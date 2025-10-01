@@ -6,6 +6,8 @@ O sistema permitirá que os usuários possam fazer:
 
 Visualizar uma lista de destinos disponíveis, organizados em cards interativos
 
+ter opções do objetivo do contato
+
 Consultar informações e descrições resumidas de cada destino
 
 Ter opções para reservar
