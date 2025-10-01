@@ -13,8 +13,7 @@ Adicionar destinos ao carrinho de reservas e finalizar a compra
 Entrar em contato com a agência por meio do formulário (seção Contato)
 
 JUSTIFICATIVA DO PROJETO (PESSOAL)
-Nós escolhemos criar um site de viagens focado em voos porque sentimos, na nossa própria experiência, como planejar uma viagem pode ser confuso e demorado. Sempre que pensamos em viajar – seja para visitar a família, conhecer um novo lugar ou fazer uma viagem de trabalho, e decidimos facilitar essa viagem com o nosso site onde vai dar varias ideias e opções incluindo até hotéis.
-
+Pessoalmente, temos grande interesse pelo universo das viagens, seja pelo desejo de conhecer novas culturas, explorar paisagens diferentes ou vivenciar experiências únicas. Esse interesse despertou em nós a motivação de criar algo que pudesse inspirar e ajudar outras pessoas a planejarem suas jornadas de forma prática, segura e prazerosa.
 JUSTIFICATIVA DO PROJETO (TÉCNICA)
 O turismo é um setor que cresce continuamente e a busca por plataformas simples para visualizar e reservar destinos é cada vez maior.
 Este site “Nossas Viagens” serve como prática para consolidar conhecimentos em:
