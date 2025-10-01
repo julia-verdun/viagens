@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ofertas Relâmpago</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2b07f5;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+      font-weight: 900;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+      position: relative;
+      padding-bottom: 20px;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #34495e;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+      min-height: 50px;
+    }
+    .prices {
+      margin-top: 10px;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .preco-normal {
+      text-decoration: line-through;
+      color: #999;
+      font-weight: 600;
+    }
+    .preco-desconto {
+      font-size: 1.8rem;
+      color: #4333cf;
+      font-weight: 900;
+    }
+    .btn-reservar {
+      margin: 15px 15px 0 15px;
+      padding: 10px 20px;
+      background-color: #0f13f0;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      align-self: center;
+      width: calc(100% - 30px);
+    }
+    .btn-reservar:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ofertas Relâmpago</h1>
+</header>
+
+<div class="cards-container" id="cards-container">
+  <!-- Cards via JS -->
+</div>
+
+<script>
+  const ofertas = [
+    { nome: "Viena, Áustria", descricao: "Cidade rica em cultura, música clássica e arquitetura imponente.", imagem: "https://www.vagamundos.pt/wp-content/uploads/2020/03/Visitar-Viena-Austria-Roteiro-compressor.jpg", precoNormal: 2500, precoDesconto: 1750 },
+    { nome: "Buenos Aires, Argentina", descricao: "Capital vibrante com tango, culinária deliciosa e história marcante.", imagem: "https://cdn2.paraty.es/parkroyal-corpo/images/29581ba3c89a845", precoNormal: 2000, precoDesconto: 1400 },
+    { nome: "Praga, República Tcheca", descricao: "Cidade medieval com castelos, pontes e charme único.", imagem: "https://www.vounajanela.com/wp-content/uploads/2018/06/o-que-fazer-em-praga-17.jpg", precoNormal: 2700, precoDesconto: 1890 },
+    { nome: "Seul, Coreia do Sul", descricao: "Metropole que une tecnologia de ponta e tradição cultural.", imagem: "https://yazigitravel.com.br/wp-content/uploads/2020/06/Viagem-para-Seul-Coreia-do-Sul-Mathew-Schwartz-1.jpg", precoNormal: 3200, precoDesconto: 2240 },
+    { nome: "Munique, Alemanha", descricao: "Famosa pela Oktoberfest, cervejas e arquitetura bávara.", imagem: "https://wp.rotadeferias.com.br/wp-content/uploads/2022/10/Depositphotos_197063222_L.jpg", precoNormal: 2300, precoDesconto: 1610 },
+    { nome: "Lima, Peru", descricao: "Destino gastronômico de renome mundial com história rica.", imagem: "https://aem-all.accor.com/content/dam/brands/ibh/hubs/americas/latam/2024/2024-02/magazine-ibis/museus-em-lima-2024-1-pontos-turisticos-de-lima-2024-2.jpg", precoNormal: 1800, precoDesconto: 1260 },
+    { nome: "Cartagena, Colômbia", descricao: "Cidade costeira cheia de cor, cultura e praias paradisíacas.", imagem: "https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2020/01/cartagena-ilha-rosario_656266366.jpg", precoNormal: 2100, precoDesconto: 1470 },
+    { nome: "Dubrovnik, Croácia", descricao: "Cidade histórica com muralhas antigas e mar cristalino.", imagem: "https://www.marzito.com/wp-content/uploads/2018/01/dubrovnik.croatia510.jpg", precoNormal: 2600, precoDesconto: 1820 },
+    { nome: "Helsinque, Finlândia", descricao: "Design moderno com natureza exuberante e cultura marcante.", imagem: "https://existeumlugarnomundo.com.br/wp-content/uploads/2021/08/Helsinque-13.jpg", precoNormal: 2800, precoDesconto: 1960 },
+    { nome: "Queenstown, Nova Zelândia", descricao: "Capital da aventura com paisagens de tirar o fôlego.", imagem: "https://novazelandiabrasil.com.br/wp-content/uploads/sites/3/2022/08/Queenstown-1024x680.jpg", precoNormal: 3000, precoDesconto: 2100 },
+    { nome: "Salvador, Brasil", descricao: "Coração da cultura afro-brasileira e praias deslumbrantes.", imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/43/ac/8f/pelourinho.jpg?w=600&h=-1&s=1", precoNormal: 1600, precoDesconto: 1120 },
+    { nome: "Luang Prabang, Laos", descricao: "Templos budistas e natureza tranquila em meio à cultura.", imagem: "https://portaltriptips.com.br/wp-content/uploads/2025/06/Atracoes-de-Luang-Prabang-Asia-Travel-and-Leisure.jpg", precoNormal: 1900, precoDesconto: 1330 },
+];
+
+  const container = document.getElementById("cards-container");
+
+  ofertas.forEach(({nome, descricao, imagem, precoNormal, precoDesconto}) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+      <img src="${imagem}" alt="${nome}" />
+      <div class="card-content">
+        <h3>${nome}</h3>
+        <p>${descricao}</p>
+        <div class="prices">
+          <span class="preco-normal">R$ ${precoNormal.toFixed(2).replace('.', ',')}</span>
+          <span class="preco-desconto">R$ ${precoDesconto.toFixed(2).replace('.', ',')}</span>
+        </div>
+        <button class="btn-reservar" onclick="fazerReserva('${nome}')">Reservar</button>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+
+  function fazerReserva(destino) {
+    alert('Reserva feita para ' + destino + '!');
+    window.location.href = "reservas.html";
+  }
+</script>
+
+</body>
+</html>
