@@ -27,7 +27,7 @@ Criação de interfaces responsivas e centradas no usuário
 
 Estruturação de páginas independentes para Destinos, Reservas, Contato e Sobre Nós
 
-Além disso, o projeto nos permitiu aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma de viagens.
+Além disso, o nosso projeto nos permitiu aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma de viagens.
 
 TÉCNOLOGIAS ENVOLVIDAS
 Front-end: HTML5, CSS3 e JavaScript
