@@ -28,7 +28,7 @@ Uso de localStorage para simular um carrinho de reservas
 
 Criação de interfaces responsivas e centradas no usuário
 
-Estruturação de páginas independentes para Destinos, Reservas, Contato e Sobre Nós
+Estruturação de páginas independentes para home (pagina inicial), desitino, reserva, ofertas e contato
 
 Além disso, o nosso projeto nos permitiu aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma de viagens.
 
