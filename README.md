@@ -35,7 +35,6 @@ Além disso, o nosso projeto nos permitiu aplicar técnicas modernas de desenvol
 TÉCNOLOGIAS ENVOLVIDAS
 Front-end: HTML5, CSS3 e JavaScript
 
-Armazenamento local: LocalStorage do navegador para gerenciar reservas
 
 Controle de versão: Git + GitHub
 
