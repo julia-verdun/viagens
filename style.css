@@ -1,0 +1,385 @@
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+}
+
+.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f9fafb;
+    color: #222;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    background: #0d47a1;
+    color: white;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6f00;
+}
+
+h2, h3 {
+    color: #0d47a1;
+}
+
+.cart {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.empty-cart-msg {
+    color: #777;
+    font-style: italic;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 0;
+}
+
+.cart-list li:last-child {
+    border-bottom: none;
+}
+
+.flight-info {
+    flex: 1;
+}
+
+.flight-info strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.flight-time {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.price {
+    font-weight: 700;
+    color: #0d47a1;
+    min-width: 110px;
+    text-align: right;
+}
+
+.btn-remove {
+    background: transparent;
+    border: none;
+    color: #c62828;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.payment-section {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.payment-options {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.payment-options label {
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.row > div {
+    flex: 1;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background: #0d47a1;
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: #073974;
+}
+
+.payment-message {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.payment-message.success {
+    color: green;
+}
+
+.payment-message.error {
+    color: red;
+}
+
+.flight-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1rem;
+}
+
+.flight-options li {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flight-options strong {
+    color: #0d47a1;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.flight-options p {
+    margin: 0.2rem 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.btn-add {
+    margin-top: 1rem;
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background: #e65b00;
+}
+
+#pix-qrcode {
+    margin: 1rem 0;
+    max-width: 200px;
+    max-height: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.pix-key {
+    font-size: 0.9rem;
+    color: #555;
+    user-select: all;
+    word-break: break-all;
+}
+
+.flight-options li {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.flight-options li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.flight-options li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #0d47a1;
+    transition: width 0.3s ease;
+}
+
+.flight-options li:hover::after {
+    width: 100%;
+}
+
+.flight-options strong {
+    color: #0d47a1;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.flight-options li:hover strong {
+    color: #ff6f00;
+}
+
+.btn-add {
+    margin-top: auto;
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-add:hover {
+    background: #e65b00;
+    transform: scale(1.05);
+}
+
+/* ====== Transições suaves ====== */
+a, button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover no menu */
+nav a:hover {
+  color: #2563eb; /* azul Tailwind */
+  transform: translateY(-2px);
+}
+
+/* Botão Buscar voos */
+#flight-search-form button {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+#flight-search-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Inputs do formulário */
+#flight-search-form input,
+#flight-search-form select {
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+#flight-search-form input:focus,
+#flight-search-form select:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+/* Cards de destinos e ofertas */
+.destination-card,
+#offers .bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destination-card:hover,
+#offers .bg-white:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}

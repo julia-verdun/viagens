@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotéis - Reserve seu hotel</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.hotel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hotel-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hotel-card:hover .hotel-image {
+  transform: scale(1.05);
+}
+
+.hotel-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-info h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.hotel-info p {
+  color: #666;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 12px 0;
+  color: #007bff;
+}
+
+.book-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* Animation on load */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+
+  <h1>Escolha seu hotel</h1>
+  
+  <div class="hotel-list">
+
+    <div class="hotel-card">
+      <img src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/08/29/1013/Grand-Hyatt-Rio-de-Janeiro-P443-Pool.jpg/Grand-Hyatt-Rio-de-Janeiro-P443-Pool.16x9.jpg" alt="Rio de Janeiro, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Rio de Janeiro, Brasil</h3>
+        <p>Praias incríveis, cidade vibrante e muita cultura.</p>
+        <div class="price">R$ 400 / noite</div>
+        <a href="reservas.html?destino=Rio%20de%20Janeiro%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://www.carpemundi.com.br/wp-content/uploads/2020/10/hotel-com-piscina-rooftop-sp.jpg" alt="São Paulo, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>São Paulo, Brasil</h3>
+        <p>Centro financeiro com excelente gastronomia e vida noturna.</p>
+        <div class="price">R$ 350 / noite</div>
+        <a href="reservas.html?destino=São%20Paulo%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/194501697.jpg?k=db19e30d8b20b57aa8b10c76fe5b2a3a326fefff82ec0e93ff4044c3b6b03a18&o=&hp=1" alt="Salvador, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Salvador, Brasil</h3>
+        <p>História, cultura afro-brasileira e praias deslumbrantes.</p>
+        <div class="price">R$ 300 / noite</div>
+        <a href="reservas.html?destino=Salvador%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/652081750.jpg?k=f55d3a1f858796d92b842dfa95f3c936bb74b56c660a2e4c149da722cab0ce3a&o=&hp=1" alt="Fortaleza, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Fortaleza, Brasil</h3>
+        <p>Praias urbanas e vida noturna animada para todos os gostos.</p>
+        <div class="price">R$ 280 / noite</div>
+        <a href="reservas.html?destino=Fortaleza%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/6a/8e/8c/wk-design-hotel.jpg?w=1200&h=-1&s=1" alt="Florianópolis, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Florianópolis, Brasil</h3>
+        <p>Ilha com praias paradisíacas e esportes aquáticos.</p>
+        <div class="price">R$ 320 / noite</div>
+        <a href="reservas.html?destino=Florianópolis%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/39/b8/c7/melia-brasil-21.jpg?w=900&h=500&s=1" alt="Brasília, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Brasília, Brasil</h3>
+        <p>Capital moderna com arquitetura única e cultural rica.</p>
+        <div class="price">R$ 310 / noite</div>
+        <a href="reservas.html?destino=Brasília%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://www.ahstatic.com/photos/7827_ho_00_p_1024x768.jpg" alt="Curitiba, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Curitiba, Brasil</h3>
+        <p>Cidade com parques lindos e clima ameno o ano todo.</p>
+        <div class="price">R$ 290 / noite</div>
+        <a href="reservas.html?destino=Curitiba%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/537549432.jpg?k=c22c557795b0010c2599596b64e5475229cf5ffb206f77d4b494fa0e7cae7c1a&o=&hp=1" alt="Recife, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Recife, Brasil</h3>
+        <p>Praias, cultura e festa o ano todo na Veneza Brasileira.</p>
+        <div class="price">R$ 310 / noite</div>
+        <a href="reservas.html?destino=Recife%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/2b/c9/e1/74/caption.jpg" alt="Maceió, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Maceió, Brasil</h3>
+        <p>Águas cristalinas e piscinas naturais espetaculares.</p>
+        <div class="price">R$ 300 / noite</div>
+        <a href="reservas.html?destino=Maceió%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/52380299.jpg?k=0994d5d5169ee004e981e1de9379de021b6ffce3131e0105e72097d98df607eb&o=" alt="Porto Alegre, Brasil" class="hotel-image" />
+      <div class="hotel-info">
+        <h3>Porto Alegre, Brasil</h3>
+        <p>Cidade cultural com parques, museus e gastronomia variada.</p>
+        <div class="price">R$ 280 / noite</div>
+        <a href="reservas.html?destino=Porto%20Alegre%2C%20Brasil" class="book-button">Reservar</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

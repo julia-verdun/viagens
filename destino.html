@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinos de Viagem</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #34495e;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn-reservar {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn-reservar:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Descubra os melhores destinos</h1>
+
+  <div class="cards-container" id="cards-container">
+    <!-- Os cards serão inseridos aqui via JavaScript -->
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const destinos = [
+        { nome: "Maldivas", descricao: "Um paraíso tropical com águas cristalinas e resorts de luxo.", imagem: "https://xtravel.com.br/wp-content/uploads/2024/02/resort-allinclusive-maldivas-xtravel-destaque.jpg" },
+        { nome: "Paris, França", descricao: "A cidade luz encanta com cultura, arte e romance.", imagem: "https://viagemeturismo.abril.com.br/wp-content/uploads/2016/11/thinkstockphotos-4549879531.jpeg" },
+        { nome: "Tóquio, Japão", descricao: "Metrópole vibrante com tradição milenar e tecnologia de ponta.", imagem: "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/df20a2d7bd7540700e9094cdf52cf209.jpg" },
+        { nome: "Rio de Janeiro, Brasil", descricao: "Praias icônicas, o Cristo Redentor e carnaval inesquecível.", imagem: "https://blog.paineirascorcovado.com.br/wp-content/uploads/2024/11/Cristo-Redentor-Por-do-sol-scaled.jpg" },
+        { nome: "Nova York, EUA", descricao: "A cidade que nunca dorme, cheia de vida, arte e cultura.", imagem: "https://descubraeua.com.br/wp-content/uploads/2020/06/manhattan-nova-york.jpg" },
+        { nome: "Barcelona, Espanha", descricao: "Arquitetura única de Gaudí e clima mediterrâneo.", imagem: "https://www.viagensecaminhos.com/wp-content/uploads/2022/05/o-que-fazer-em-barcelona-espanha-sagrada-familia.jpg" },
+        { nome: "Dubai, Emirados Árabes", descricao: "Luxo, arranha-céus e experiências no deserto.", imagem: "https://www.kangaroo.com.br/images/dubai/vista-aerea-cidade-dubai-marina.jpg" },
+        { nome: "Roma, Itália", descricao: "História antiga, monumentos impressionantes e culinária divina.", imagem: "https://benditacidadania.com.br/wp-content/uploads/2021/02/roma-capital-da-italia.jpg" },
+        { nome: "Bali, Indonésia", descricao: "Templos sagrados, praias paradisíacas e natureza exuberante.", imagem: "https://upload.wikimedia.org/wikipedia/commons/6/64/Tanah-Lot_Bali_Indonesia_Pura-Tanah-Lot-01.jpg" },
+        { nome: "Sydney, Austrália", descricao: "Ópera icônica, praias e vida urbana descontraída.", imagem: "https://passagenspromo.com.br/blog/wp-content/uploads/2023/11/Design-sem-nome-2023-11-27T212503.248.jpg" },
+        { nome: "Cidade do Cabo, África do Sul", descricao: "Montanha da Mesa, vinhos e paisagens deslumbrantes.", imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg" },
+        { nome: "Bangkok, Tailândia", descricao: "Templos vibrantes, mercados flutuantes e vida noturna agitada.", imagem: "https://viagemegastronomia.cnnbrasil.com.br/wp-content/uploads/sites/5/2015/12/Bangkok-city.jpg" },
+        { nome: "Londres, Reino Unido", descricao: "História, modernidade e cultura em cada esquina.", imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/1200px-London_Skyline_%28125508655%29.jpeg" },
+        { nome: "Lisboa, Portugal", descricao: "Cidades históricas, fado e delícias gastronômicas.", imagem: "https://pt.kampaoh.com/wp-content/uploads/2024/02/Praia-dos-Galapos-Setubal-37.jpg" },
+        { nome: "Istambul, Turquia", descricao: "Ponto de encontro entre o Ocidente e o Oriente.", imagem: "https://turisnews.com.br/wp-content/uploads/2024/02/Turquia.jpg" },
+        { nome: "Toronto, Canadá", descricao: "Diversidade cultural, natureza e qualidade de vida.", imagem: "https://comoviaja.com.br/wp-content/uploads/Toronto-e-CN-Tower-de-noite-Foto-Ontario-Travel-Divulga%C3%A7%C3%A3o-1024x682.jpg" },
+        { nome: "Petra, Jordânia", descricao: "Cidade esculpida em pedra com história milenar.", imagem: "https://vontadedeviajar.com/wp-content/uploads/2015/02/Petra-Ruinas-do-Tesouro-na-Jordania.jpg" },
+        { nome: "Santorini, Grécia", descricao: "Casas brancas, mar azul e pores do sol mágicos.", imagem: "https://www.melhoresdestinos.com.br/wp-content/uploads/2021/04/santorini-grecia.jpg" },
+        { nome: "Cairo, Egito", descricao: "Pirâmides, esfinges e legado dos faraós.", imagem: "https://upload.wikimedia.org/wikipedia/commons/d/db/Cairo_From_Tower_%28cropped%29.jpg" },
+        { nome: "Amsterdã, Holanda", descricao: "Canais encantadores, bicicletas e museus renomados.", imagem: "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png" },
+        { nome: "Viena, Áustria", descricao: "Cultura clássica, cafés tradicionais e arquitetura imperial.", imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35q-rA0jVFXJ0GJs6KYYT8YhRsPymtShCuw&s" },
+        { nome: "Lima, Peru", descricao: "Gastronomia premiada e acesso a Machu Picchu.", imagem: "https://aem-all.accor.com/content/dam/brands/ibh/hubs/americas/latam/2024/2024-02/magazine-ibis/museus-em-lima-2024-1-pontos-turisticos-de-lima-2024-2.jpg" },
+        { nome: "Buenos Aires, Argentina", descricao: "Tango, arquitetura europeia e cultura vibrante.", imagem: "https://cdn2.paraty.es/parkroyal-corpo/images/29581ba3c89a845" },
+        { nome: "Praga, República Tcheca", descricao: "Castelos, pontes e charme medieval.", imagem: "https://www.vounajanela.com/wp-content/uploads/2018/06/o-que-fazer-em-praga-17.jpg" },
+        { nome: "Seul, Coreia do Sul", descricao: "Alta tecnologia, tradição coreana e vida urbana.", imagem: "https://yazigitravel.com.br/wp-content/uploads/2020/06/Viagem-para-Seul-Coreia-do-Sul-Mathew-Schwartz-1.jpg" },
+        { nome: "Osaka, Japão", descricao: "Culinária famosa e vida noturna agitada.", imagem: "https://content.r9cdn.net/rimg/dimg/45/5f/5788029f-city-25901-16737226b47.jpg?width=1366&height=768&xhint=1747&yhint=789&crop=true" },
+        { nome: "Munique, Alemanha", descricao: "Cerveja, cultura bávara e castelos.", imagem: "https://i0.wp.com/brasilvancouver.com/wp-content/uploads/2023/06/False-Creek-Vancouver-Canada.jpg?fit=1024%2C768&ssl=1" },
+        { nome: "Vancouver, Canadá", descricao: "Montanhas, mar e estilo de vida equilibrado.", imagem: "https://wp.rotadeferias.com.br/wp-content/uploads/2022/10/Depositphotos_197063222_L.jpg" },
+        { nome: "Havana, Cuba", descricao: "Carros clássicos, arquitetura colonial e música por toda parte.", imagem: "https://cdn.prod.website-files.com/56e9debf633486e330198479/6808ce3e7a6245a24046117c_havan-faq-cuba.jpg" },
+        { nome: "Marrakech, Marrocos", descricao: "Mercados coloridos, cultura árabe e desertos impressionantes.", imagem: "https://f.i.uol.com.br/fotografia/2024/09/02/172529667266d5f02062228_1725296672_3x2_rt.jpg" },
+        { nome: "Reykjavik, Islândia", descricao: "Auroras boreais, paisagens vulcânicas e águas termais.", imagem: "https://cdn.bestbuysimtravel.com/wp-content/uploads/2024/05/Reykjavik.jpg" },
+      { nome: "Queenstown, Nova Zelândia", descricao: "Aventura e paisagens espetaculares entre montanhas e lagos.", imagem: "https://novazelandiabrasil.com.br/wp-content/uploads/sites/3/2022/08/Queenstown-1024x680.jpg" },
+  { nome: "Cusco, Peru", descricao: "Porta de entrada para Machu Picchu com rica história Inca.", imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/ba/cusco.jpg?w=1400&h=1400&s=1" },
+  { nome: "Edimburgo, Escócia", descricao: "Castelos medievais e festivais culturais incríveis.", imagem: "https://cdn2.civitatis.com/reino-unido/edimburgo/guia/shutterstock_2259327801.jpg" },
+  { nome: "Dubrovnik, Croácia", descricao: "Cidade antiga com muralhas impressionantes e mar Adriático.", imagem: "https://www.marzito.com/wp-content/uploads/2018/01/dubrovnik.croatia510.jpg" },
+  { nome: "Reykjavik, Islândia", descricao: "Auroras boreais, gêiseres e paisagens vulcânicas.", imagem: "https://novazelandiabrasil.com.br/wp-content/uploads/sites/3/2022/08/Queenstown-1024x680.jpg" },
+  { nome: "Kigali, Ruanda", descricao: "Porta para safáris incríveis e conservação de gorilas.", imagem: "https://upload.wikimedia.org/wikipedia/commons/8/83/Kigali2018Cropped.jpg" },
+  { nome: "Valparaíso, Chile", descricao: "Cidade colorida e artística à beira do Pacífico.", imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/b7/valparaiso.jpg?w=1400&h=1400&s=1" },
+  { nome: "Zanzibar, Tanzânia", descricao: "Praias paradisíacas e rica cultura swahili.", imagem: "https://content.r9cdn.net/rimg/dimg/e1/6e/f59cbe52-city-1557-1661ba47712.jpg?width=1200&height=630&xhint=2066&yhint=1423&crop=true" },
+  { nome: "Tallinn, Estônia", descricao: "Centro medieval bem preservado com charme único.", imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0cHcXAlrpG0zQo9ylm8rvGW4yutpZeVLaw&s" },
+  { nome: "Lviv, Ucrânia", descricao: "Cidade histórica com arquitetura barroca e cafés aconchegantes.", imagem: "https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/2023/11/29130318/Lviv20UcraCC82nia_binary_282735-2048x1365.jpg" },
+  { nome: "Luang Prabang, Laos", descricao: "Templos budistas e natureza exuberante.", imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/68/0f/a7/caption.jpg?w=600&h=400&s=1" },
+  { nome: "Cartagena, Colômbia", descricao: "Cidade colonial com praias e vida noturna vibrante.", imagem: "https://dicasdacolombia.com.br/wp-content/uploads/sites/22/2018/07/bocagrande-cartagena-jpg.webp" },
+  { nome: "Helsinque, Finlândia", descricao: "Design moderno e paisagens costeiras deslumbrantes.", imagem: "https://existeumlugarnomundo.com.br/wp-content/uploads/2021/08/Helsinque-13.jpg" },
+  { nome: "Bruges, Bélgica", descricao: "Canais encantadores e arquitetura medieval.", imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuDJnyumXMecuO-_pQBZqVJjbrPL63DE8EZzTC4uwy76NGsfaOXpy6hy9HskRDO9lKVLb8Yx3wGSQW-zFxFklU1tvoOGnIu7fU9-M_3NEgthvP9k2Xn-s7KoAamW7K1JtvB1PWlevpFK6D4xfnlsOCVRbxDk8fH7-N38wW1nAL0LgqGiEDM2pimmLERQ/s1920/Bruges%20Be%CC%81lgica%20.jpeg" },
+  { nome: "Salvador, Brasil", descricao: "Cultura afro-brasileira, praias e culinária típica.", imagem: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/43/ac/8f/pelourinho.jpg?w=600&h=-1&s=1" },
+  { nome: "Hvar, Croácia", descricao: "Ilha com praias cristalinas e vida noturna agitada.", imagem: "https://www.costacruzeiros.com/content/dam/costa/costa-magazine/articles-magazine/islands/hvar/4-hvar-694x390.jpg.image.694.390.low.jpg" },
+  { nome: "Riga, Letônia", descricao: "Cidade com arquitetura art nouveau e história rica.", imagem: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG" },
+  { nome: "Bordeaux, França", descricao: "Famosa região vinícola com charme francês clássico.", imagem: "https://francabrasil.com.br/wp-content/uploads/sites/11/2022/08/Bordeaux.jpg" },
+  { nome: "Hoi An, Vietnã", descricao: "Cidade antiga com lanternas coloridas e culinária deliciosa.", imagem: "https://www.carpemundi.com.br/wp-content/uploads/2017/03/hoi-an-vietna-4.jpg" },
+  { nome: "Mendoza, Argentina", descricao: "Região de vinhos e paisagens andinas impressionantes.", imagem: "https://www.viajenaviagem.com/wp-content/uploads/2018/04/mendoza-vista-montanhas-nevadas-16x9-1.jpg.webp" }
+];
+    
+    
+    
+    
+
+      const container = document.getElementById("cards-container");
+
+      destinos.forEach(destino => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+          <img src="${destino.imagem}" alt="${destino.nome}">
+          <div class="card-content">
+            <h3>${destino.nome}</h3>
+            <p>${destino.descricao}</p>
+          <a class="btn-reservar" href="reservas.html?destino=${encodeURIComponent(destino.nome)}">Reservar</a>
+
+        `;
+
+        container.appendChild(card);
+      });
+    });
+
+    function fazerReserva(destino) {
+      alert('Reserva feita para ' + destino + '!');
+      window.location.href = "reserva.html";
+    
+    }
+    card.innerHTML = `
+  <img src="${destino.imagem}" alt="${destino.nome}">
+  <div class="card-content">
+    <h3>${destino.nome}</h3>
+    <p>${destino.descricao}</p>
+    <a class="btn-reservar" href="reservas.html?destino=${encodeURIComponent(destino.nome)}">Reservar</a>
+  </div>
+`;
+
+  </script>
+
+</body>
+</html>
